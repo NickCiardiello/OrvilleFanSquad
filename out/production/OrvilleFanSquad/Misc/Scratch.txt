@@ -1,0 +1,11 @@
+
+
+*** Welcome!
+
+
+* Notes
+Under the source directory, there's going to be a Four (for now) files
+    Main.java -> This is where you are going to type and run your code
+    Scratch.txt -> This is where you can keep your own notes should you choose to write down stuff yourself
+    Lesson.txt -> This will be new information to learn and also the instructions to write
+    Answers.txt -> Answers for the problems if you get stuck

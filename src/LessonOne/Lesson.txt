@@ -1,0 +1,155 @@
+
+*** Lesson One
+The goal of this lesson is to get you to code your first calculator
+
+* First look
+
+The orange words are Java keywords, I'll tell you what they mean as we need to use them
+A common problem I have with Java tutorials is spending a lesson on describing what "public static void" means
+Don't worry about it
+In the program there will be a lot of *syntax* you don't need to worry about for now, such as {}, [], ().
+    I'll teach you what those mean later, I'm trying to gear these lessons more towards "doing"
+    and don't want to overwhelm anyone with superfluous information that you can't see what it's doing.
+
+Lines that begin '//' are commented out lines, which means the program doesn't bother to read them
+They're used here as "don't run this line of code" and often used as notes for developers
+
+The yellow words are called *methods*
+    A method is the Java term for "a set of instructions for the program to execute"
+    The first method of the program is called 'main', the second being 'helloWorld', yada yada
+    I'm going to use the word method a lot, that's what I'm talking about
+
+
+* Running your first Program
+1. helloWorld
+Instructions: Click the green arrow in the gutter on line 6 that has the word "main" to execute the method
+    helloWorld to run your first program!
+   When below I say "Run the program" what I mean is click that green arrow
+Result: A panel at the bottom of the screen, called the console, should open that says "Hello World!"
+What is happening:
+    The line System.out.println is an instruction to the program which means "Print what is in the parentheses"
+    We'll be using it a lot
+Fun note: Traditionally the first program everyone writes is called Hello World
+    It's like the first program ever written or something like that and it just stuck around
+    Whenever a developer learns a new language, first thing they do is just called "Writing Hello World"
+        instead of saying "Wrote my first program"
+
+2. helloName
+Instructions: In the method helloName, replace the word 'myName' with your name.
+    Or whatever you want I don't care lol
+    In the main method, comment out the line that says helloWorld() and uncomment the line that says helloName()
+    What you're doing here is telling the program to run the code in the method helloName instead of helloWorld
+Result: A line should be printed in the console below that says "Hello " and then whatever you replaced myName with
+
+3. helloWorld AND helloName
+Instructions: Uncomment the method helloWorld in the main method and keep the line helloName uncommented
+    Run the program
+Result: You should see two lines printed out, the first saying "Hello World"
+    The second line should be the "Hello " and then whatever you replaced myName with
+This is important to see, in Java lines of code are all executed in order.
+    No matter how many times you run this program, the main method will run the methods chronologically
+    Not every programming language does this
+        I hate javascript, it /basically/ runs all the lines at once.
+
+4. printFirstInt
+What is happening:
+    int myInt = 69
+        int is a java keyword to declare a *variable* that is an Integer
+        An "int" variable can be any number (69, 420, etc)
+        This line calls the Integer "myInt".  You can change myInt to whatever you like, it doesn't matter what you call it
+        The purpose of variables is to reference whatever it was assigned
+    System.out.println(myInt)
+        This line means "print the variable myInt"
+        Note that myInt doesn't go in double quotes.  You don't need those for variables
+Instructions:
+    Edit the main method so that the function only runs the method printFirstInt and prints "69".
+    Change 69 to a different number and run it again
+    Rename the variable myInt to whatever you'd like, can you get the program to print out the number with the new variable name?
+
+5. operators
+An operator is one of the basic functions on a calculator
+    + -> Addition
+    - -> Subtraction
+    * -> Multiplication
+    / -> Division
+What is happening:
+    Create an Integer called intOne and assign it the value of 10
+    Create an Integer called intTwo and assign it to the value of 5
+    Create an Integer called sum which is assigned to be the value of intOne plus intTwo
+    Print sum
+Instructions:
+    Run the method operators without any edits, it should print out 13.
+    On the third line of the method, replace the '+' with a '-' or '*' and run it again
+        It should print out the correct math calculation
+    Try dividing 10 by 3 and print the result
+        It should print out '3' instead of '3.33333...'
+        There's a little trick you need to do for accurate division in Java, we'll get into it later
+    Declare a third int called intThree, assign it the value of 2, add it to the sum, and get the
+        print statement to print out the number 15
+
+6. stringConcatenation
+Concatenation is the Java term for adding a *String* or variable to another String
+A String is the programming term for a line of text, in Java a String is always declared with double quotes
+What is happening:
+    The first line in the method is to declare a string called myString and assign it to the text "Hello"
+    The second line will print out "Hello".  Notice how because it is a variable you don't need the double quotes
+    The following 3 System.out.println statements should all print out "Hello World".
+        Can you follow along with the logic and understand why they all print the same thing even though
+        what's in the parentheses are all different?
+
+7. stringAndVariableConcatenation
+When you add an int to a String (myString + myInt) the result is a concatenation of myString and myInt
+The first line of the method will print out "Hello Nick, I have seen Zedd 5 times"
+Instructions:
+    Write a method that prints out another line *exactly* like above without using double quotes in the line System.out.println();
+    Declare the number 5 as an int, and the text before and after the five as their own Strings
+    Note: When you first print it, is there a place where there should be a space but isn't?
+Answer is in src/LessonOne/Answers.txt
+
+
+
+8. scannerNextLine
+A scanner is an *Object* that reads user input typed into the console
+Objects are the crux of what makes Java Java, hence why Java is called an Object Oriented Programming language
+Objects will be a later lesson, so for now just know the line declares a Scanner object called scanner
+What is happening:
+    The second line prints the String "What is your name?"
+    The third line tells the program to wait for the user to type something into the console
+        and assigns to the variable nicksName
+    Take note: The method nextLine() declared the user input as a String
+Instructions:
+    Run the method scanner.  The console should pop up if it's not there already
+    You should see String "Who are you greeting?" printed in the console
+    Click into the console, type Nick, and click enter
+    The program should print out "Hello Nick"
+
+    Add a line of code to print "What is your name?"
+    Prompt the user for another input using scanner.nextLine() and assign it to a String called myName
+    Print out the line "Hello Nick, my name is <your name here>"
+Expected result printed to console when you're done:
+    Who are you greeting?
+    Nick
+    What is your name?
+    <your name here>
+    Hi Nick, my name is <your name here>
+Answer is in src/LessonOne/Answers.txt
+
+9. scannerNextInt
+In the previous method, we used the method nextLine() to read the user input as a String
+For this method we want to read the user input as an int.
+Instructions:
+    Print out a prompt asking the user to enter a number
+    Use the method nextInt instead of nextLine to assign the user inputted number to an int
+    Print out "You inputted the number <your number here>".
+
+10. calculator
+Write a calculator that adds two numbers from user input
+Instructions:
+    Create a Scanner object (copy and paste the first line from scannerNextInt())
+    Prompt the user with "What is the first number to add?" and assign the input to a variable
+    Prompt the user with "What is the second number to add?" and assign the input to a variable
+    Print out the sum of user's two inputs formatted as
+        "<first number goes here> + <second number goes here> = <sum>"
+
+
+

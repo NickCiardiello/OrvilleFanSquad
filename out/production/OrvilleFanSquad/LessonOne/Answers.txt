@@ -1,0 +1,72 @@
+
+
+public static void casting() {
+    int intOne = 5;
+    int intTwo = 10;
+    System.out.println(intOne + intTwo); // Prints "
+
+    String stringOne = "5";
+    String stringTwo = "10";
+    System.out.println(stringOne + stringTwo); // Prints "5
+
+    int castedStringOne = Integer.parseInt(stringOne);
+    int castedStringTwo = Integer.parseInt(stringTwo);
+    System.out.println(castedStringOne + castedStringTwo); // Prints
+
+    String oneString = "1";
+    String twoString = "2";
+    String threeString = "3";
+    int oneInt = Integer.parseInt(oneString);
+    int twoInt = Integer.parseInt(twoString);
+    int threeInt = Integer.parseInt(threeString);
+    System.out.println(oneInt + twoInt + threeInt);
+}
+
+
+
+
+
+
+
+
+
+
+public static void stringAndVariableConcatenation() {
+    String helloNick = "Hello Nick, I have seen Zedd ";
+    int numTimesSeenZedd = 5;
+    String times = " times";
+    System.out.println(helloNick + numTimesSeenZedd + times);
+}
+
+
+
+
+
+
+
+public static void scannerNextLine() {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Who are you greeting?");
+    String nicksName = scanner.nextLine();  // Read user input
+    System.out.println("Hi " + nicksName);  // Output user input
+    System.out.println("What is your name?");
+    String myName = scanner.nextLine();
+    System.out.println("Hi " + nicksName + ", my name is " + myName);
+}
+
+
+
+
+
+public static void scannerNextInt() {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Input a number");
+    int myNum = scanner.nextInt();
+    System.out.println("You inputted the number " + myNum);
+}
+
+
+
+
+
+

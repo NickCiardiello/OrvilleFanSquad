@@ -1,0 +1,74 @@
+
+public static void operators() {
+    int intOne = 10;
+    int intTwo = 3;
+    int result = intOne + intTwo;
+    int intThree = 2;
+    int newResult = result + intThree;
+    System.out.println(newResult);
+}
+
+
+
+
+
+
+
+
+
+public static void stringAndVariableConcatenation() {
+    String helloNick = "Hello Nick, I have seen Zedd ";
+    int numTimesSeenZedd = 5;
+    String times = " times";
+    System.out.println(helloNick + numTimesSeenZedd + times);
+}
+
+
+
+
+
+
+
+public static void scannerNextLine() {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Who are you greeting?");
+    String nicksName = scanner.nextLine();  // Read user input
+    System.out.println("Hi " + nicksName);  // Output user input
+    System.out.println("What is your name?");
+    String myName = scanner.nextLine();
+    System.out.println("Hi " + nicksName + ", my name is " + myName);
+}
+
+
+
+
+
+public static void scannerNextInt() {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Input a number");
+    int myNum = scanner.nextInt();
+    System.out.println("You inputted the number " + myNum);
+}
+
+
+
+
+
+
+
+
+
+
+public static void calculator() {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("What is the first number to add?");
+    int firstNum = scanner.nextInt();
+    System.out.println("What is the second number to add?");
+    int secondNum = scanner.nextInt();
+    int sum = firstNum + secondNum;
+    System.out.println(firstNum + " + " + secondNum + " = " + sum);
+}
+
+
+
+

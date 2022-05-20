@@ -18,7 +18,7 @@ brew install git
 
 After that downloads, run the following command:
 
-https://github.com/NickCiardiello/OrvilleFanSquad.git
+git clone https://github.com/NickCiardiello/OrvilleFanSquad.git
 
 IntelliJ now should load the project
 

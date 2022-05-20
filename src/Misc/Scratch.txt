@@ -9,3 +9,18 @@ Under the source directory, there's going to be a Four (for now) files
     Scratch.txt -> This is where you can keep your own notes should you choose to write down stuff yourself
     Lesson.txt -> This will be new information to learn and also the instructions to write
     Answers.txt -> Answers for the problems if you get stuck
+
+* Little bit about IntelliJ
+IntelliJ is called an Integrated Development Environment (IDE) which is the term for an application you write code in
+to develop other applications
+
+The left panel is the file explorer where you can open new files with a double click
+
+Most likely while working on the problems you'll want to have both Main.java and Lesson.txt pulled up
+When both tabs are open, right click the Lesson.txt tab at the top of the editor and click "split right" in the dropdown that pops up
+
+
+Running your first project:
+Click "Run" at the top of your screen (above the IntelliJ application.  It's to the right of the panel that says
+IntelliJ IDEA, File, Edit, View, yada yada
+Click "Run Main" in the dropdown, should be the first one
